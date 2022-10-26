@@ -5,7 +5,7 @@
   </header>
   <%if enhanced_cart.empty?%>
   <p class="alert alert-warning"> Shopping cart is empty! </p>
-  <a href="<%= root_path %>"> Home Page </a>
+  <%= link_to "Home Page", root_path, class: 'btn btn-lg btn-primary' %>
   <% else %>
   <div class="panel panel-default items">
     <table class="table table-bordered">
